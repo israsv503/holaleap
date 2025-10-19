@@ -1,0 +1,62 @@
+/* =========================================
+   Hola Leap: Custom Styles and Variables 
+   ========================================= */
+
+:root {
+    /* * Modern Pop Palette (Palette C) 
+     * Primary: Electric Teal (for buttons, headers)
+     * Accent: Hot Pink (for highlights, quiz elements, and fun text)
+     * Text: Dark Gray
+     * Background: Off-White
+     */
+    --color-primary: #00CED1;    /* Electric Teal / Dark Turquoise */
+    --color-accent: #FF69B4;     /* Hot Pink */
+    --color-text: #333333;       /* Dark Gray for readability */
+    --color-background: #F8F9FA; /* Soft Off-White (Bootstrap's light gray) */
+    
+    /* Typography */
+    --font-heading: 'Arial', sans-serif;
+    --font-body: 'Verdana', sans-serif;
+}
+
+/* Base styles for the playful theme */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+}
+
+h1, h2, h3 {
+    /* Use the Primary Teal for a clean, modern look on headers */
+    color: var(--color-primary); 
+    font-family: var(--font-heading);
+}
+
+/* General button styling to use our primary color */
+.btn-primary {
+    /* Teal button background with white text for great contrast */
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+    color: white !important; 
+    font-weight: bold;
+}
+
+/* Update the navbar style */
+.navbar {
+    /* Use the primary Teal for the navbar background */
+    background-color: var(--color-primary) !important;
+}
+
+.navbar-brand, .nav-link {
+    /* White text on Teal provides excellent contrast */
+    color: white !important;
+}
+
+/* Set the button outline color to the accent Hot Pink for high contrast */
+.btn-outline-secondary {
+    --bs-btn-color: var(--color-accent) !important;
+    --bs-btn-border-color: var(--color-accent) !important;
+    /* Use the primary color for the hover state */
+    --bs-btn-hover-bg: var(--color-primary) !important;
+    --bs-btn-hover-color: white !important;
+}
